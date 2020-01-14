@@ -24,8 +24,3 @@ Route::get('user/{id}', function ($id) {
     return 'User'.$id;
 })->where('id', '[0-9]+');
 
-Route::get('user/profile', function () {
-    //
-})->name('profile');
-
-Route::get('test', 'TestController@index');
